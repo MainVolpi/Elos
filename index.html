@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellos-Gold</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1 id="ellosgold">Ellos Gold</h1>
+    <form onsubmit="handleSubmit(event)" class="formulario">
+        <h1>Preencha o Formulario <br>Ouro Amarelo 18k</br></h1>
+        <div>
+            <label for="pi">Peso do Ouro Descartado (g):</label>
+            <input type="number" id="pi" name="pi" step="any" required>
+        </div>
+        <div>
+            <label for="pf">Peso Final do Ouro (g): </label>
+            <input type="number" id="pf" name="pf" step="any" required>
+
+        </div>
+        <div>
+            <label for="Au">Média da leitura Au (%):</label>
+            <input type="number" id="Au" name="Au" step="any" required>
+        </div>
+        <div>
+            <label for="Ag">Média da leitura Ag (%):</label>
+            <input type="number" id="Ag" name="Ag" step="any" required>
+        </div>
+        <div>
+            <label for="Cu">Média da leitura Cu (%):</label>
+            <input type="number" id="Cu" name="Cu" step="any" required>
+        </div>
+        <div>
+            <label for="Zn">Média da leitura Zn (%):</label>
+            <input type="number" id="Zn" name="Zn" step="any" required>
+        </div>
+
+
+        <button type="submit" id="calcular">Calcular</button>
+
+        <div id="resultados" class="resultado"></div>
+    </form>
+
+    <form id="formCalculo">
+        <h1>Preencha o Formulário <br>Ouro Amarelo 10k</br></h1>
+
+        <div>
+            <label for="ouroDescartado">Peso do Ouro Descartado (g):</label>
+            <input type="number" id="ouroDescartado" step="any" required>
+        </div>
+
+        <div>
+            <label for="ouroFinal">Peso Final do Final (g):</label>
+            <input type="number" id="ouroFinal" step="any" required>
+        </div>
+
+        <div>
+            <label for="teor">Teor do Ouro Descartado (%):</label>
+            <input type="number" id="teor" step="any" required>
+        </div>
+
+        <button type="submit" id="calcular">Calcular</button>
+
+
+        <div id="resultados2" style="display: none;">
+            <p id="resultadoAu"></p>
+            <p id="resultadoAg"></p>
+        </div>
+    </form>
+
+
+
+
+
+    <form id="formOuroBranco">
+        <h1>Preencha o Formulário <br>Ouro Branco 19k</h1><br></h1>
+        <div>
+            <label for="piB">Peso do Ouro Descartado (g):</label>
+            <input type="text" id="piB" pattern="[0-9]+([,\.][0-9]+)?">
+        </div>
+
+        <div>
+            <label for="pFB">Peso do Ouro Final (g):</label>
+            <input type="text" id="pFB" pattern="[0-9]+([,\.][0-9]+)?">
+        </div>
+
+        <div>
+            <label for="tF">Teor Desejável (%):</label>
+            <input type="text" id="tF" pattern="[0-9]+([,\.][0-9]+)?">
+        </div>
+
+        <div>
+            <label for="AuB">Teor do Ouro no Descarte (%):</label>
+            <input type="text" id="AuB" pattern="[0-9]+([,\.][0-9]+)?">
+        </div>
+
+        <button type="submit" id="calcular">Calcular</button>
+
+        <div id="resultados4" style="display: none;">
+            <p id="resultadoAuB"></p>
+            <p id="resultadoAgB"></p>
+            <p id="resultadoCuB"></p>
+            <p id="resultadoBrB"></p>
+        </div>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
