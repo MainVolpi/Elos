@@ -1,4 +1,4 @@
-//alert('Todas as Medidas colocadas terão que ser em GRAMAS(g)')
+('Todas as Medidas colocadas terão que ser em GRAMAS(g)')
 function handleSubmit(event) {
     event.preventDefault();
 

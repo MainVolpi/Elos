@@ -6,15 +6,18 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    padding: 10px 0; /* Espaço interno */
-    z-index: 1000; /* Garante que fique acima de outros elementos */
+    padding: 10px 0;
+    /* Espaço interno */
+    z-index: 1000;
+    /* Garante que fique acima de outros elementos */
     font-style: italic;
 }
 
 
 body {
     display: flex;
-    justify-content: space-around; /* Distribui os elementos uniformemente */
+    justify-content: space-around;
+    /* Distribui os elementos uniformemente */
     align-items: center;
     min-height: 100vh;
     margin: 0;
@@ -22,9 +25,12 @@ body {
     background-color: gray;
 }
 
-.formulario2, .formulario, #formCalculo2 {
+.formulario2,
+.formulario,
+#formCalculo2 {
     flex: 1;
-    max-width: 30%; /* Limita a largura dos formulários */
+    max-width: 30%;
+    /* Limita a largura dos formulários */
     padding: 20px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -51,12 +57,15 @@ body {
 label {
     margin-right: 10px;
     font-weight: bold;
-    min-width: 150px; /* Largura mínima para alinhar */
-    text-align: right; /* Alinha os labels à direita */
+    min-width: 150px;
+    /* Largura mínima para alinhar */
+    text-align: right;
+    /* Alinha os labels à direita */
 }
 
 input {
-    flex: 1; /* Faz o input ocupar o espaço restante */
+    flex: 1;
+    /* Faz o input ocupar o espaço restante */
     padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -65,7 +74,8 @@ input {
 }
 
 input:focus {
-    border-color: #007bff; /* Borda azul ao focar */
+    border-color: #007bff;
+    /* Borda azul ao focar */
     outline: none;
 }
 
@@ -74,7 +84,8 @@ button {
     font-size: 16px;
     font-weight: bold;
     color: #fff;
-    background-color: #007bff; /* Azul vibrante */
+    background-color: #007bff;
+    /* Azul vibrante */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -83,41 +94,54 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Tom mais escuro ao passar o mouse */
+    background-color: #0056b3;
+    /* Tom mais escuro ao passar o mouse */
 }
 
 #resultados p {
-    color: black; /* Altera a cor do texto */
-    font-size: 16px; /* Altera o tamanho da fonte */
-    margin-bottom: 10px; /* Altera o espaço entre os parágrafos */
+    color: black;
+    /* Altera a cor do texto */
+    font-size: 16px;
+    /* Altera o tamanho da fonte */
+    margin-bottom: 10px;
+    /* Altera o espaço entre os parágrafos */
     background-color: white\;
 }
+
 .resultado {
     display: flex;
     flex-direction: column;
 }
+
 #pf {
     margin-left: 50px;
 }
+
 #Au {
     margin-left: 46px;
 }
+
 #Ag {
     margin-left: 46px
 }
+
 #Cu {
     margin-left: 46px
 }
+
 #Zn {
     margin-left: 48px
 }
+
 #ouroDescartado2 {
     margin-left: 62px;
 }
+
 #ouroFinal2 {
     margin-left: 112px;
 }
-#resultados{
+
+#resultados {
     align-items: center;
     text-align: center;
 }
@@ -132,27 +156,35 @@ button:hover {
     text-align: center;
     justify-content: center;
 }
+
 #ouroDescartado {
     margin-left: 10px;
 }
+
 #ouroFinal {
     margin-left: 60px;
 }
+
 #teor {
     margin-left: 10px;
 }
+
 #piB {
     margin-left: 10px;
 }
+
 #pFB {
     margin-left: 59.8px;
 }
+
 #tF {
     margin-left: 90.3px;
 }
+
 #AuB {
     margin-left: 5.85px;
 }
+
 #formOuroBranco {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -169,6 +201,7 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
 #resultados4 {
     text-align: center;
     align-items: center;
