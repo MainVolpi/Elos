@@ -1,71 +1,50 @@
-#ellosgold {
-    color: #ddac17;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    padding: 10px 0;
-    /* Espaço interno */
-    z-index: 1000;
-    /* Garante que fique acima de outros elementos */
-    font-style: italic;
-}
-
-
 body {
     display: flex;
-    justify-content: space-around;
-    /* Distribui os elementos uniformemente */
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: gray;
+    padding: 20px;
 }
 
 .formulario2,
 .formulario,
-#formCalculo2 {
-    flex: 1;
-    max-width: 30%;
-    /* Limita a largura dos formulários */
+#formCalculo2,
+#formOuroBranco,
+#formCalculo {
+    width: 90%;
+    max-width: 600px;
     padding: 20px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
 }
-
-
-
 
 #formCalculo div {
     display: flex;
-    align-items: left;
+    align-items: center;
     margin-bottom: 15px;
     width: 100%;
 }
-
 
 label {
     margin-right: 10px;
     font-weight: bold;
     min-width: 150px;
-    /* Largura mínima para alinhar */
     text-align: right;
-    /* Alinha os labels à direita */
 }
 
 input {
     flex: 1;
-    /* Faz o input ocupar o espaço restante */
     padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -75,7 +54,6 @@ input {
 
 input:focus {
     border-color: #007bff;
-    /* Borda azul ao focar */
     outline: none;
 }
 
@@ -85,76 +63,32 @@ button {
     font-weight: bold;
     color: #fff;
     background-color: #007bff;
-    /* Azul vibrante */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 button:hover {
     background-color: #0056b3;
-    /* Tom mais escuro ao passar o mouse */
 }
 
-#resultados p {
-    color: black;
-    /* Altera a cor do texto */
-    font-size: 16px;
-    /* Altera o tamanho da fonte */
-    margin-bottom: 10px;
-    /* Altera o espaço entre os parágrafos */
-    background-color: white\;
-}
-
-.resultado {
-    display: flex;
-    flex-direction: column;
-}
-
-#pf {
-    margin-left: 50px;
-}
-
-#Au {
-    margin-left: 46px;
-}
-
-#Ag {
-    margin-left: 46px
-}
-
-#Cu {
-    margin-left: 46px
-}
-
-#Zn {
-    margin-left: 48px
-}
-
-#ouroDescartado2 {
-    margin-left: 62px;
-}
-
-#ouroFinal2 {
-    margin-left: 112px;
-}
-
-#resultados {
+#resultados,
+#resultados2,
+#resultados4 {
     align-items: center;
     text-align: center;
 }
 
-#resultados2 {
-    align-items: center;
-    text-align: center;
-}
 
-#calcular {
-    display: flex;
+#resultados4 {
     text-align: center;
-    justify-content: center;
+    align-items: center;
 }
 
 #ouroDescartado {
@@ -185,24 +119,51 @@ button:hover {
     margin-left: 5.85px;
 }
 
-#formOuroBranco {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 20px;
+#calcular {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-#formCalculo {
+
+#pf {
+    margin-left: 50px;
+}
+
+#Au {
+    margin-left: 46px;
+}
+
+#Ag {
+    margin-left: 46px
+}
+
+#Cu {
+    margin-left: 46px
+}
+
+#Zn {
+    margin-left: 48px
+}
+
+#ouroDescartado2 {
+    margin-left: 62px;
+}
+
+#ouroFinal2 {
+    margin-left: 112px;
+}
+
+#resultados {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
 }
 
-#resultados4 {
-    text-align: center;
-    align-items: center;
+#ellosgold {
+    color: #d4af37;
+    font-style: italic;
 }
